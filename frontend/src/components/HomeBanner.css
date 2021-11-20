@@ -1,0 +1,108 @@
+.homeBannerSection {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.homeBanner h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c9d2d9;
+  margin-bottom: 2rem;
+}
+
+.homeBanner h1 {
+  color: #c9d2d9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.homeBanner p {
+  color: #c9d2d9;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  width: 60%;
+}
+
+.homeBanner button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeBanner button span {
+  margin-right: 5px;
+}
+
+.homeBannerWrapper .slick-dots li {
+  position: relative;
+}
+
+.homeBannerWrapper .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  content: "•";
+  text-align: center;
+  color: #c9d2d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeBannerWrapper .slick-dots .slick-active {
+  border: 1px solid #c9d2d9;
+  border-radius: 100%;
+}
+
+@media (max-width: 1200px) {
+  .homeBannerWrapper .slick-dots li button:before {
+    top: 0.2rem;
+    left: 0.18rem;
+    width: 1.5rem;
+    height: 1.5rem;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeBanner p {
+    width: 100%;
+  }
+
+  .homeBannerSection {
+    text-align: center;
+    height: 85vh;
+  }
+
+  .homeBanner button {
+    width: 19rem;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .homeBannerWrapper .slick-dots li button:before {
+    top: 0.4rem;
+    left: 0.35rem;
+    width: 1.2rem;
+    height: 1.2rem;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .homeBanner h1 {
+    line-height: 1.2;
+  }
+}
+
+

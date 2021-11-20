@@ -1,0 +1,10 @@
+.userProfileSection {
+  min-height: 70vh;
+  padding: 8rem 0;
+}
+
+.userProfileWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
